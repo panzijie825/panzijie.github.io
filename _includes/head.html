@@ -1,0 +1,49 @@
+{% include base_path %}
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ✅ Set site title explicitly -->
+<title>{{ site.title }} {{ site.title_separator }} Ph.D. Student in Computer Science, University of Connecticut</title>
+
+<!-- ✅ SEO Meta Description -->
+<meta name="description" content="Kanghui Ning's academic homepage. Ph.D. student in Computer Science at the University of Connecticut. Research, publications, and contact information.">
+
+<!-- ✅ Structured data using JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kanghui Ning",
+  "url": "https://kanghui-learning.github.io",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Connecticut"
+  },
+  "jobTitle": "Ph.D. Student",
+  "sameAs": []
+}
+</script>
+
+<!-- ✅ Google Search Console Verification -->
+<meta name="google-site-verification" content="CVMOMjRMnWA8l4cN0-cYtorzIIX_u_duNqQC62xr4sY" />
+
+<!-- Feed -->
+<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+
+<!-- Device optimization -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+
+<!-- Styles -->
+<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+<meta http-equiv="cleartype" content="on">
+
+<!-- JS class fallback -->
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- ✅ Favicon (customize your path and icon file) -->
+<link rel="icon" href="{{ base_path }}/assets/images/favicon.ico" type="image/x-icon">
