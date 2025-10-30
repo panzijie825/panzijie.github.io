@@ -8,31 +8,31 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Kanghui Ning"
+title                    : "Zijie Pan" 
 title_separator          : "|"
-name                     : &name "Kanghui Ning"
-description              : &description "Kanghui Ning's academic website. Ph.D. Student in Computer Science at University of Connecticut, focusing on machine learning, time series analysis, and AI research."
-url                      : https://kanghui-learning.github.io
+name                     : &name "Zijie Pan"
+description              : &description "Zijie Pan's academic website. Ph.D. Student in Computer Science at University of Connecticut, focusing on machine learning, time series analysis, and AI research."
+url                      : https://panzijie.github.io
 baseurl                  : ""
-repository               : "kanghui-learning/kanghui-learning.github.io"
+repository               : "panzijie825/panzijie.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "kanghui.jpg"
-  name             : "Kanghui Ning"
+  avatar           : "pzj.png"
+  name             : "Zijie Pan"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. Student in Computer Science, University of Connecticut"
+  bio              : "Ph.D. Candidate in Computer Science, University of Connecticut"
   location         : "Storrs, CT"
   # employer         : "Red Brick University"
   # uri              : # URL
-  email            : "kanghui.ning@uconn.edu" 
+  email            : "zijie.pan@uconn.edu"
 
   # Academic websites
   # arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=xlX4a5QAAAAJ&hl=en"
+  googlescholar    : "https://scholar.google.com/citations?user=-ZPcD5MAAAAJ"
   impactstory      : # URL
   # orcid            : "http://orcid.org/yourorcidurl"
   semantic         : # URL
@@ -43,8 +43,8 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "kanghui-learning"
-  kaggle           : "sakura1986"
+  github           : "panzijie825"
+  kaggle           : # Username
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
@@ -57,7 +57,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "kanghui-ning-ab9419244"
+  linkedin         : "zijiepan"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -126,17 +126,17 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "kanghui.jpg"
+og_image                 : "pzj.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : Person
   name                   : *name
   links:
-    - "https://kanghui-learning.github.io"
-    - "https://scholar.google.com/citations?user=xlX4a5QAAAAJ"
-    - "https://github.com/kanghui-learning"
-    - "https://www.linkedin.com/in/kanghui-ning-ab9419244/"
+    - "https://panzijie.github.io"
+    - "https://scholar.google.com/citations?user=-ZPcD5MAAAAJ"
+    - "https://github.com/panzijie825"
+    - "https://www.linkedin.com/in/zijiepan/"
 
 
 # Analytics
