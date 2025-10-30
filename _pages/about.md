@@ -56,10 +56,10 @@ I went to college at the [University of Virginia](https://www.virginia.edu/) and
 
 Feel free to reach out to me at [zijie.pan@uconn.edu](mailto:kanghui.ning@uconn.edu) or connect with me on [LinkedIn](https://www.linkedin.com/in/zijiepan/).
 
----
+<!-- ---
 <div align="center">
 <img src="https://visitor-badge.laobi.icu/badge?page_id=kanghui-learning.kanghui-learning.github.io" alt="visitors">
-</div>
+</div> -->
 
 <!-- Temporarily hidden Clustrmaps
 <div align="center">
