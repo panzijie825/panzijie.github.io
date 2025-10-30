@@ -12,9 +12,9 @@ title                    : "Zijie Pan"
 title_separator          : "|"
 name                     : &name "Zijie Pan"
 description              : &description "Zijie Pan's academic website. Ph.D. Student in Computer Science at University of Connecticut, focusing on machine learning, time series analysis, and AI research."
-url                      : https://panzijie.github.io
+url                      : https://panzijie825.github.io
 baseurl                  : ""
-repository               : "panzijie825/panzijie.github.io"
+repository               : "panzijie825/panzijie825.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
