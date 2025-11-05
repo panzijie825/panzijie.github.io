@@ -11,7 +11,7 @@ author_profile: true
 
 - **Towards Interpretable and Trustworthy Time Series Reasoning: A BlueSky Vision**  
   Kanghui Ning, **Zijie Pan**, Yushan Jiang, Anderson Schneider, Yuriy Nevmyvaka, Dongjin Song  
-  ICDM, 2025s  
+  ICDM, 2025  
   <i class="fas fa-file-alt"></i> [Paper](https://arxiv.org/abs/2510.16980)
 
 - **TS-RAG: Retrieval-Augmented Generation based Time Series Foundation Models are Stronger Zero-Shot Forecaster**  
