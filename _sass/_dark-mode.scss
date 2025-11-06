@@ -1,0 +1,394 @@
+/* ==========================================================================
+   Dark Mode Variables and Styles
+   ========================================================================== */
+
+:root {
+  /* Light mode colors (default) */
+  --bg-color: #fff;
+  --text-color: #494e52;
+  --text-color-light: #7a8288;
+  --border-color: #f2f3f3;
+  --code-bg-color: #fafafa;
+  --sidebar-bg-color: #fff;
+  --masthead-bg-color: #fff;
+  --link-color: #52adc8;
+  --link-hover-color: #3d8aa3;
+  --button-bg-color: #fff;
+  --button-border-color: #bbb;
+  --shadow-color: rgba(0, 0, 0, 0.125);
+  --notice-bg-color: #f8f9fa;
+  --archive-item-bg: #f2f3f3;
+}
+
+[data-theme="dark"] {
+  /* Dark mode colors */
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --text-color-light: #b0b0b0;
+  --border-color: #333;
+  --code-bg-color: #2d2d2d;
+  --sidebar-bg-color: #222;
+  --masthead-bg-color: #1f1f1f;
+  --link-color: #64b5f6;
+  --link-hover-color: #90caf9;
+  --button-bg-color: #333;
+  --button-border-color: #555;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --notice-bg-color: #2a2a2a;
+  --archive-item-bg: #2a2a2a;
+}
+
+/* Apply CSS variables to elements */
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
+}
+
+/* Text colors */
+.page__content,
+.page__meta,
+.archive__item-excerpt,
+.list__item .archive__item-title {
+  color: var(--text-color);
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: var(--sidebar-bg-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.author__avatar img {
+  border: 3px solid var(--border-color);
+}
+
+.author__content .author__name {
+  color: var(--text-color);
+}
+
+.author__bio {
+  color: var(--text-color-light);
+}
+
+/* Masthead */
+.masthead {
+  background-color: var(--masthead-bg-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.masthead__menu-item a {
+  color: var(--text-color);
+  
+  &:hover {
+    color: var(--link-color);
+  }
+}
+
+/* Code blocks */
+pre,
+code {
+  background-color: var(--code-bg-color);
+  color: var(--text-color);
+}
+
+/* Buttons */
+.btn {
+  background-color: var(--button-bg-color);
+  border: 1px solid var(--button-border-color);
+  color: var(--text-color);
+  
+  &:hover {
+    background-color: var(--border-color);
+  }
+}
+
+/* Archive items */
+.archive__item {
+  background-color: var(--archive-item-bg);
+  border: 1px solid var(--border-color);
+}
+
+.archive__item-title a {
+  color: var(--text-color);
+  
+  &:hover {
+    color: var(--link-color);
+  }
+}
+
+/* Notices */
+.notice {
+  background-color: var(--notice-bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+/* Footer */
+.page__footer {
+  background-color: var(--sidebar-bg-color);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-color-light);
+}
+
+/* Navigation */
+.greedy-nav {
+  background-color: var(--masthead-bg-color);
+}
+
+.greedy-nav a {
+  color: var(--text-color);
+  
+  &:hover {
+    color: var(--link-color);
+  }
+}
+
+/* Tables */
+table {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+}
+
+th, td {
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+th {
+  background-color: var(--border-color);
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.dark-mode-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.dark-mode-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 24px;
+}
+
+.dark-mode-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+input:checked + .dark-mode-slider {
+  background-color: var(--link-color);
+}
+
+input:checked + .dark-mode-slider:before {
+  transform: translateX(26px);
+}
+
+/* Dark mode icons */
+.dark-mode-slider .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  transition: opacity 0.3s;
+}
+
+.dark-mode-slider .sun-icon {
+  left: 6px;
+  opacity: 1;
+}
+
+.dark-mode-slider .moon-icon {
+  right: 6px;
+  opacity: 0;
+}
+
+input:checked + .dark-mode-slider .sun-icon {
+  opacity: 0;
+}
+
+input:checked + .dark-mode-slider .moon-icon {
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dark-mode-toggle {
+    margin-left: 10px;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .dark-mode-slider:before {
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+  }
+  
+  input:checked + .dark-mode-slider:before {
+    transform: translateX(20px);
+  }
+}
+/* A
+dditional dark mode styles */
+[data-theme="dark"] {
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+  }
+  
+  /* Page content */
+  .page__content p,
+  .page__content li,
+  .page__content dt,
+  .page__content dd {
+    color: var(--text-color);
+  }
+  
+  /* Author profile */
+  .author__urls li a {
+    color: var(--text-color);
+    
+    &:hover {
+      color: var(--link-color);
+    }
+  }
+  
+  /* Social icons */
+  .author__urls .fa {
+    color: var(--text-color-light);
+  }
+  
+  /* Archive items */
+  .archive__item-teaser img {
+    border: 1px solid var(--border-color);
+  }
+  
+  /* Publication items */
+  .archive__item-excerpt {
+    color: var(--text-color-light);
+  }
+  
+  /* CV items */
+  .cv-item {
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  /* Blockquotes */
+  blockquote {
+    background-color: var(--notice-bg-color);
+    border-left: 4px solid var(--link-color);
+    color: var(--text-color);
+  }
+  
+  /* Form elements */
+  input, textarea, select {
+    background-color: var(--code-bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+  }
+  
+  /* Pagination */
+  .pagination {
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .pagination li a {
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    
+    &:hover {
+      background-color: var(--border-color);
+      color: var(--link-color);
+    }
+  }
+  
+  /* Search */
+  .search-content {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+  }
+  
+  /* Syntax highlighting adjustments for dark mode */
+  .highlight {
+    background-color: var(--code-bg-color);
+  }
+  
+  .highlighter-rouge .highlight {
+    background-color: var(--code-bg-color);
+  }
+  
+  /* Mobile menu */
+  .greedy-nav .hidden-links {
+    background-color: var(--masthead-bg-color);
+    border: 1px solid var(--border-color);
+  }
+  
+  .greedy-nav .hidden-links a {
+    color: var(--text-color);
+    
+    &:hover {
+      background-color: var(--border-color);
+      color: var(--link-color);
+    }
+  }
+}
+
+/* Ensure smooth transitions for all themed elements */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Override any conflicting styles */
+[data-theme="dark"] .page {
+  background-color: var(--bg-color);
+}
+
+[data-theme="dark"] .sidebar {
+  background-color: var(--sidebar-bg-color);
+}
+
+/* Fix for any remaining white backgrounds */
+[data-theme="dark"] .archive,
+[data-theme="dark"] .layout--single,
+[data-theme="dark"] .layout--archive {
+  background-color: var(--bg-color);
+}

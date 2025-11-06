@@ -47,3 +47,16 @@
 
 <!-- ✅ Favicon (customize your path and icon file) -->
 <link rel="icon" href="{{ base_path }}/assets/images/favicon.ico" type="image/x-icon">
+
+<!-- Dark Mode Script - Load early to prevent flash -->
+<script>
+  // Immediately apply saved theme to prevent flash
+  (function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
