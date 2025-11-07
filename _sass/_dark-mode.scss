@@ -69,8 +69,14 @@ a {
 
 /* Sidebar */
 .sidebar {
-  background-color: var(--sidebar-bg-color);
-  border-right: 1px solid var(--border-color);
+  background-color: transparent;
+  border-right: none;
+}
+
+.sidebar.sticky {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
 .author__avatar img {
@@ -391,4 +397,13 @@ dditional dark mode styles */
 [data-theme="dark"] .layout--single,
 [data-theme="dark"] .layout--archive {
   background-color: var(--bg-color);
+}
+/* Fix for main container in dark mode */
+[data-theme="dark"] #main {
+  background-color: transparent;
+}
+
+[data-theme="dark"] .sidebar.sticky {
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
